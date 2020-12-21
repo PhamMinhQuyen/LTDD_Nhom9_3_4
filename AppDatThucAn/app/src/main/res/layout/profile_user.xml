@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileUser"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+
+    >
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="670dp">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:text="Tôi"
+       android:gravity="center_horizontal"
+       android:textStyle="bold"
+       android:textSize="20dp"
+       android:background="#FFFFFF"
+       >
+   </TextView>
+   <ImageView
+       android:id="@+id/images"
+       android:layout_width="match_parent"
+       android:layout_height="120dp"
+       android:src="@drawable/avt1"
+       android:background="#FFFFFF"
+       >
+   </ImageView>
+   <TextView
+       android:id="@+id/profile_name"
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:text=""
+       android:gravity="center_horizontal"
+
+       android:textSize="20dp"
+       android:textStyle="bold"
+       android:background="#FFFFFF"
+       />
+
+   <Button
+       android:id="@+id/bt_quetma"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="12dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_voucher"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+
+       android:text="QUÉT MÃ GIẢM GIÁ" />
+   <Button
+       android:id="@+id/shopxu"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:background="#FFFFFF"
+       android:layout_marginTop="3dp"
+       android:text="Shopee xu"
+
+       android:gravity="left"
+       android:paddingTop="12dp"
+       android:paddingLeft="8dp"
+       android:paddingRight="10dp"
+       android:drawablePadding="15dp"
+       android:drawableLeft="@drawable/ic_action_shopee"
+       android:drawableRight="@drawable/ic_action_next"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:background="#FFFFFF"
+       android:layout_marginTop="3dp"
+       android:text="Thanh toán"
+       android:gravity="left"
+       android:paddingTop="12dp"
+       android:paddingLeft="8dp"
+       android:paddingRight="10dp"
+       android:drawablePadding="15dp"
+       android:drawableLeft="@drawable/ic_action_pay"
+       android:drawableRight="@drawable/ic_action_next"
+       />
+
+   <Button
+       android:id="@+id/bt_ganday"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="3dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_address"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+       android:text="CÁC QUÁN GẦN ĐÂY" />
+
+   <Button
+       android:id="@+id/bt_guimail"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="13dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_friend"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+       android:text="Mời bạn bè" />
+
+   <Button
+       android:id="@+id/bt_tttg"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="3dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_help"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+       android:text="Trung tâm trợ giúp" />
+   />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:background="#FFFFFF"
+       android:layout_marginTop="12dp"
+       android:text="ứng dụng cho chủ quán"
+       android:gravity="left"
+       android:paddingTop="12dp"
+       android:paddingLeft="8dp"
+       android:paddingRight="10dp"
+       android:drawablePadding="15dp"
+       android:drawableLeft="@drawable/ic_action_application"
+       android:drawableRight="@drawable/ic_action_next"
+       />
+   <Button
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:background="#FFFFFF"
+       android:layout_marginTop="12dp"
+       android:text="chính sách quy định"
+       android:gravity="left"
+       android:paddingTop="12dp"
+       android:paddingLeft="8dp"
+       android:paddingRight="10dp"
+       android:drawablePadding="15dp"
+       android:drawableLeft="@drawable/ic_action_help"
+       android:drawableRight="@drawable/ic_action_next"
+       />
+
+   <Button
+       android:id="@+id/bt_caidat"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="3dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_setting"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+       android:text="cài đặt" />
+
+   <Button
+       android:id="@+id/bt_venow"
+       android:layout_width="match_parent"
+       android:layout_height="42dp"
+       android:layout_marginTop="3dp"
+       android:background="#FFFFFF"
+       android:drawableLeft="@drawable/ic_action_now"
+       android:drawableRight="@drawable/ic_action_next"
+       android:drawablePadding="15dp"
+       android:gravity="left"
+       android:paddingLeft="8dp"
+       android:paddingTop="12dp"
+       android:paddingRight="10dp"
+       android:text="về now" />
+   <Button
+       android:id="@+id/dangxuat"
+       android:layout_width="350dp"
+       android:layout_height="45dp"
+       android:layout_gravity="center"
+       android:layout_marginTop="30dp"
+       android:text="đăng xuất"
+       android:textColor="#FF0000"
+       android:textStyle="bold"
+       android:textSize="20dp"
+       android:background="@drawable/customer"
+
+       >
+   </Button>
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:layout_marginTop="30dp"
+       android:text="Phiên bản 4.28.24"
+       android:gravity="center_horizontal"
+
+       />
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="30dp"
+       android:text="Foody Corporation"
+       android:gravity="center_horizontal"
+       />
+  </LinearLayout>
+ </ScrollView>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:id="@+id/rl_nav"
+     android:layout_height="wrap_content"
+     >
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/bottom_navigation"
+      android:layout_alignParentBottom="true"
+      app:itemBackground="@color/white"
+      app:itemTextColor="@drawable/selector"
+      app:itemIconTint="@drawable/selector"
+      app:menu="@menu/menu_navigation" />
+ </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#FFFFFF">
+        <Button
+            android:id="@+id/bt_tl_tbao"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:drawableLeft="@drawable/ic_tl"
+            android:background="#FAFAFA"/>
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông báo"
+            android:layout_marginLeft="95dp"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/icon_dong_ho"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Hãy đón chờ!"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#190707"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Thông báo mới sẽ được cập nhật tại đây."
+        android:textSize="22sp"
+
+        android:textColor="#190707"
+        android:gravity="center"/>
+
+</LinearLayout>

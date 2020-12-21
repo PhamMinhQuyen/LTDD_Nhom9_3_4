@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:hint="Tìm địa điểm,món ăn,địa chỉ,..."
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:text="Thanh Sơn,Hải Châu,Đà Nẵng,Việt Nam"
+            android:textSize="18sp"
+            android:textColor="#181407"
+            android:drawableLeft="@drawable/ic_baseline_location_on_24"
+            android:drawablePadding="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ViewFlipper
+                android:id="@+id/viewFlipper_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km1"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km2"
+                    />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km3"
+                    />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km4" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km5" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km6" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km7" />
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="420dp"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/km8" />
+            </ViewFlipper>
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/trasua"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/ts"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/ic_baseline_local_cafe_24"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Trà Sữa"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/com"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/com1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/rice"
+                    />
+                <TextView
+
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Cơm"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/garan"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/ga"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/ga"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Gà rán"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/banh"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/bt_banh"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/bsn"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Bánh"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/thuoc"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/bt_thuoc"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/thuoc"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Thuốc"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bia"
+                android:layout_width="100dp"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/bt_bia"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button"
+                    android:drawableTop="@drawable/bia"
+                    />
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:text="Bia"
+                    android:textSize="19sp"
+                    android:textColor="#181407"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rl_nav"
+        android:layout_height="wrap_content"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/white"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_navigation" />
+    </RelativeLayout>
+</LinearLayout>
+

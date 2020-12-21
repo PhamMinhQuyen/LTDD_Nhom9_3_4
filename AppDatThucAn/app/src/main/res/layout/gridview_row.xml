@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img1"
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/ic_launcher"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/imgname"
+            android:text="Tên món ăn"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgname"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/img1"
+            android:background="@drawable/icon_uy_tin" />
+
+        <TextView
+            android:id="@+id/addressText"
+            android:layout_width="500dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/nameText"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/imgdiachi"
+            android:text="Địa chỉ"
+            android:textColor="#777777"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imgdiachi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/imgname"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/img1"
+            android:background="@drawable/icon_dia_chi" />
+
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:numStars="5"
+            android:rating="3.5"
+            android:layout_below="@+id/addressText"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/img1"/>
+
+        <TextView
+            android:id="@+id/kmText"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addressText"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imgkm"
+            android:text="Km"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgkm"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/addressText"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/ratingBar"
+            android:background="@drawable/icon_dong_ho" />
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+

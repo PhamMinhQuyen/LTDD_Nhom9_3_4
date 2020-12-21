@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".shop_details">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/shopRL"
+
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/imgshopIv"
+            android:src="#fff"
+            android:scaleType="centerCrop"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+
+            android:background="@drawable/ic_baseline_back_white"
+            android:id="@+id/iconback"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/shopIv"
+            android:layout_below="@id/imgshopIv"
+            android:background="@color/white"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/shopNameTv"
+                android:text="Shop name"
+                android:textSize="22sp"
+                android:layout_toRightOf="@+id/imgShopname"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imgShopname"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/icon_uy_tin"/>
+
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/addressShopTv"
+                android:text="Address"
+                android:layout_marginTop="5dp"
+                android:textSize="16sp"
+                android:layout_below="@+id/shopNameTv"
+                android:textColor="@color/black"
+                android:layout_marginLeft="35dp"/>
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:numStars="5"
+                android:rating="3.5"
+                android:layout_below="@+id/addressShopTv"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:id="@+id/kmShop"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/addressShopTv"
+                android:layout_marginTop="10dp"
+                android:text="Km"
+                android:layout_toRightOf="@id/imgShopkm"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgShopkm"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/addressShopTv"
+                android:layout_marginLeft="35dp"
+                android:layout_toRightOf="@id/rating"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icon_dong_ho" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/shopIv"
+            android:layout_marginTop="8dp">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

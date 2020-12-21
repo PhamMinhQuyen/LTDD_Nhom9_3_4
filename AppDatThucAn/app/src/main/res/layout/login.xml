@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="@drawable/nen">
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_baseline_back"/>
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/gg"/>
+        <Button
+            android:id="@+id/lggg"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="0.57dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:background="#df5145"
+            android:text="Đăng Nhập Bằng Google"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/fb"/>
+        <Button
+            android:id="@+id/lgfb"
+            android:layout_width="300dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="0.57dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:background="#1979f4"
+            android:text="Đăng Nhập Bằng Facebook"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/dk"
+            android:layout_width="350dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="30dp"
+            android:textSize="14dp"
+            android:textColor="#FFFFFF"
+            android:background="#0ea256"
+            android:text="Đăng Ký"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/login"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usn"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:hint="Địa Chỉ Email Của Bạn"/>
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="300dp"
+            android:layout_height="46dp"
+            android:paddingLeft="5dp"
+            android:inputType="textPassword"
+            android:layout_marginLeft="30dp"
+            android:textColor="#FFFFFF"
+            android:hint="Mật Khẩu Của Bạn"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_dangnhap"
+        android:layout_width="372dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"
+        android:background="#FFFFFF"
+        android:text="Đăng Nhập"/>
+    <TextView
+        android:id="@+id/fgpass"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginLeft="155dp"
+        android:textSize="17dp"
+        android:textColor="#B3B3B3"
+        android:text="Quên mật khẩu" />
+</LinearLayout>
